@@ -1,0 +1,19 @@
+/* AddNoteButton.css */
+
+#add-note-button {
+    background-color: #16008B;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    #addNote{
+        display: flex;
+        justify-content: end;
+        padding: 20px;
+    }
+}

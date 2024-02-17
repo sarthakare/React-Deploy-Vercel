@@ -1,0 +1,103 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  grid-gap: 0px;
+  text-align: center;
+  position: relative;
+}
+
+#addNotes {
+  width: 30vw;
+  background-color: #ffffff;
+  height: 100vh;
+  position: relative;
+  overflow-y: auto;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.group:hover {
+  background-color: lightgray;
+  border-radius: 15px;
+}
+
+#group-color {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  color: #ffffff;
+  font-size: large;
+  font-weight: bold;
+  margin: 10px 20px;
+}
+
+#group-name {
+  margin-left: 20px;
+}
+
+#addNoteButtonContainer {
+  position: fixed;
+  bottom: 1vw;
+  left: 22%;
+}
+
+#showNotes {
+  background-color: #dae5f5;
+  height: 100vh;
+}
+
+#backgroundImageCSS {
+  font-weight: 500;
+  width: 32vw;
+  padding: 100px;
+  margin-left: 20%;
+}
+
+#backgroudImage {
+  width: 32vw;
+}
+
+#text02 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#text02 p {
+  margin-left: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  #addNotes {
+    min-width: 100%;
+    display: block;
+  }
+
+  #addNoteButtonContainer {
+    position: fixed; 
+    right: 0px;
+  }
+
+  #showNotes {
+    display: none;
+  }
+
+  #backgroundImageCSS {
+    display: none;
+  }
+
+  #text02 {
+    display: none;
+  }
+}
