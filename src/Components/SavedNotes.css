@@ -88,6 +88,7 @@ body {
 @media only screen and (max-width: 600px) {
 
 .savedNotesClass{
+  width: 100%;
   position: fixed;
   top: 0px;
   background-color: #dae5f5;
